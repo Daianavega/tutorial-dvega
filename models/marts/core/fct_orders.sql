@@ -1,8 +1,3 @@
---Create a fct_orders (not stg_orders) model with the following fields.  Place this in the marts/core directory.
---order_id
---customer_id
---amount (hint: this has to come from payments)
-
 with orders as  (
     select * from {{ ref('stg_orders' )}}
 ),
